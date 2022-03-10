@@ -6,17 +6,18 @@
   background-color: whitesmoke;
   text-align: center;
   border-radius: 20px;
-  font-size: 30px;
-  width: 80%
+  font-size: 23px;
+  width: 90%
 }
 
 .answerList {
   background-color: whitesmoke;
   border-radius: 20px;
   display: block;
-  width: 80%;
+  width: 90%;
   border: 0px;
-  font-size: 20px;
+  font-size: 17px;
+  text-align: center;
 }
 
 .answerList:hover, .answerList:focus {
@@ -27,7 +28,7 @@
 
 .status {
   height: 20px;
-  width: 80%;
+  width: 90%;
   background-color: white;
   border-radius: 20px;
 }

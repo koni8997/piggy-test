@@ -14,17 +14,19 @@
 }
 
 .resultname{
-  font-size: 26px;
+  font-size: 2em;
 }
 
 .resultDesc{
-  font-size: 20px;
+  font-size: 1.2em;
+  padding:30px;
+  box-sizing: content-box;
 }
 
 .kakao{
   color: white;
   background-color: #fdb5b6;
-  font-size: 20px;
+  font-size: 1.2em;
   border: 0px;
   border-radius: 20px;
 }
@@ -34,10 +36,25 @@
   color: #fdb5b6;
 }
 
+
+.btn{
+  color: whitesmoke;
+  background-color: #fdb5b6;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 120px;
+
+}
+
+.btn:hover{
+  background-color: #f3e2e3;
+  color: whitesmoke;
+}
+
 .gohome{
   color: white;
   background-color: pink;
-  font-size: 20px;
+  font-size: 1.2em;
   border: 0px;
   border-radius: 20px;
 }

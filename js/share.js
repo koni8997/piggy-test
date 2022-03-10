@@ -1,11 +1,11 @@
-const url = 'https://twelvelovetype.netlify.app/'; //테스트 주소
+const url = 'https://piggy-test.netlify.app/'; //테스트 주소
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = '나의 돼지력 테스트';
   const shareDes = infoList[resultAlt].name;
-  const shareImage = url + 'img/image-' + resultAlt + '.png';
+  const shareImage = url + 'img/image-' + resultAlt + '.gif';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   Kakao.Link.sendDefault({
