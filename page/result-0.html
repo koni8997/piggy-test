@@ -18,6 +18,9 @@
       <link rel="shortcut icon" href="/img/pig.png">
       <link rel="apple-touch-icon-precomposed" href="/img/pig.png" />
 
+       <!-- 통계보기(chart.js) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>    
+
       <title>돼지력 테스트</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,12 +40,29 @@
       <div class="resultDesc">
         <p>먹기 위해 사는 당신!<br> 당신 삶의 원동력은 음식이라 수시로 먹을 것을 입에 넣어줘야 불안해하지 않는 스타일이랍니다😋. 배가 안 고파도 음식 냄새만 맡으면 일단 거실로 돌진하는 멧돼지 성향을 보이고 있어 가족들의 경계 대상 1호가 될 수 있어요....😱<br> 소화력 또한 좋아 음식 먹고 체하는 일도 거의 없지만 어쩌다 한 번 체하면 심하게 아플 수 있으니 자제력이 필요하답니다! </p>
       </div>
+
+      <!-- 공유&통계보기 버튼 -->
+      <div class="btnWrapper">
+        <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+        <button type="button" class="statisticsBtn mt-3 py-2 px-3" onclick="js:showStastics()">다른 참여자들 결과 확인</button>
+      </div>
+
+      <!-- 참여자 통계보기 -->
+      <!-- <div class="canvasWrapper">
+        <canvas id="myChart"></canvas>
+      </div>
       <script type="text/javascript">
         function moveHome(){
           location.href = "/index.html";
         }
       </script>
-      <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">나도 참여하기</button>
+      <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">나도 참여하기</button> -->
     </section>
+    <script>
+      function showStastics(){
+        window.location.href = "/statistics.html";//클릭 시 결과 보기 페이지
+      }
+    </script>
+    <script src="/js/start.js"></script>
   </body>
 </html>

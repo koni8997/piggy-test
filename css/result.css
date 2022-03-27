@@ -1,17 +1,16 @@
-#result{
+:root{
+  --color-pink:#fdb5b6;
+  --color-white:whitesmoke;
+}
+
+#result, #shareResult{
   display: none;
-  background-color: whitesmoke;
+  background-color: var(--color-white);
   width: 80%;
   text-align: center;
   border-radius: 20px;
 }
 
-#shareResult{
-  background-color: whitesmoke;
-  width: 80%;
-  text-align: center;
-  border-radius: 20px;
-}
 
 .resultname{
   font-size: 2em;
@@ -23,23 +22,32 @@
   box-sizing: content-box;
 }
 
-.kakao{
-  color: white;
-  background-color: #fdb5b6;
-  font-size: 1.2em;
-  border: 0px;
-  border-radius: 20px;
+.btnWrapper{
+  display: flex;
+  flex-direction: column;
 }
 
-.kakao:hover, .kakao:focus {
-  background-color: whitesmoke;
-  color: #fdb5b6;
+.kakao, .statisticsBtn,.gohome{
+  color:var(--color-white);
+  background-color: var(--color-pink);
+  font-size: 1.2em;
+  border: 0px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.kakao:hover, .kakao:focus,.gohome:hover, .gohome:focus,.statisticsBtn:hover {
+  background-color: var(--color-white);
+  color: var(--color-pink);
 }
 
 
 .btn{
-  color: whitesmoke;
-  background-color: #fdb5b6;
+  color: var(--color-white);
+  background-color: var(--color-pink);
   font-size: 20px;
   border-radius: 20px;
   width: 120px;
@@ -48,18 +56,6 @@
 
 .btn:hover{
   background-color: #f3e2e3;
-  color: whitesmoke;
+  color: var(--color-white);
 }
 
-.gohome{
-  color: white;
-  background-color: pink;
-  font-size: 1.2em;
-  border: 0px;
-  border-radius: 20px;
-}
-
-.gohome:hover, .gohome:focus {
-  background-color: whitesmoke;
-  color: pink;
-}

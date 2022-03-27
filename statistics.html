@@ -27,30 +27,25 @@
       <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="../css/default.css">
       <link rel="stylesheet" href="../css/result.css">
+      <link rel="stylesheet" href="/css/statistics.css">
   </head>
   <body>
-    <section id="shareResult" class="mx-auto my-5 py-5 px-5">
-      <h1>당신의 결과는?!</h1>
-      <div class="resultname">
-        <p>적당한 돼지력을 갖춰 먹는 즐거움을 아는,"아기돼지"</p>
-      </div>
-      <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-        <img src="../img/image-1.gif" alt="0" class="img-fluid">
-      </div>
-      <div class="resultDesc">
-        <p>먹는 즐거움을 적당히 즐기는 당신! 절제해야 할 때를 아는 신중한 스타일이랍니다.👍🏻 먹을 것에 진심이기는 하나 배가 고플 때도 이성의 끈을 놓지 않아 예민하게 굴거나 못 먹을 양의 음식을 주문해서 남기는 참사를 막을 수 있어요.🥲<br>  배가 고파 이성을 잃은 멧돼지 친구를 만난다면 친구의 정신줄을 대신해서 잡아주고 먹을 것을 입에 넣어주세요🍔.<br> 그럼 당신은 우정도, 체중도 모두 지킬 수 있는 현명한 아기돼지가 될 것입니다!</p>
-      </div>
+    <!-- <section id="shareResult" class="mx-auto my-5 py-5 px-5"> -->
 
       <!-- 참여자 통계보기 -->
+      <h3>다른 사람들은 이렇대..</h3>
       <div class="canvasWrapper">
         <canvas id="myChart"></canvas>
-      </div>  
+      </div>
+      <!-- <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+      <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">나도 참여하기</button>
+
       <script type="text/javascript">
         function moveHome(){
           location.href = "/index.html";
-        }
+        } -->
       </script>
-      <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">나도 참여하기</button>
-    </section>
+      <script src="/js/statistics.js"></script>
+    <!-- </section> -->
   </body>
 </html>

@@ -18,6 +18,9 @@
       <link rel="shortcut icon" href="/img/pig.png">
       <link rel="apple-touch-icon-precomposed" href="/img/pig.png" />
 
+       <!-- 통계보기(chart.js) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>    
+
       <title>돼지력 테스트</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,6 +40,12 @@
       <div class="resultDesc">
         <p>돼지력이라고는 조금도 없는 당신! 당신은 안(아니)-돼지입니다😶. 먹는 것에 대한 즐거움 보다는 다른 것에서 즐거움을 찾으며, 아무리 배가 고파도 평정심을 잃지 않아 주변으로부터 무식욕자라는 말을 들을 수도 있어요🍏.<br>  안-돼지들에게는 대부분 사람이 멧돼지로 보이기 때문에 이들은 생태계에서도 최하위 그룹에 속하며, 식사 시 단 한마디도 없이 최선을 다해서 먹으면 본인의 몫은 겨우 챙길 수 있을 것입니다!🤞🏻🤞🏻</p>
       </div>
+
+      <!-- 참여자 통계보기 -->
+      <div class="canvasWrapper">
+        <canvas id="myChart"></canvas>
+      </div>
+      
       <script type="text/javascript">
         function moveHome(){
           location.href = "/index.html";
