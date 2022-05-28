@@ -1,0 +1,25 @@
+{
+  "name": "piggy-test_ver2",
+  "version": "1.0.0",
+  "description": "server for piggy-test_ver2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koni8997/piggy-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koni8997/piggy-test/issues"
+  },
+  "homepage": "https://github.com/koni8997/piggy-test#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.16"
+  }
+}

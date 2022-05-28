@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-    <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="author" content="PandaCoding">
-      <meta name="keywords" content="돼지력 테스트">
-      <meta name="description" content="나의 돼지력은 얼마일까?">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="PandaCoding" />
+    <meta name="keywords" content="돼지력 테스트" />
+    <meta name="description" content="나의 돼지력은 얼마일까?" />
 
-      <!-- sns share -->
-      <meta property="og:url" content="https://piggytest-ver1.netlify.app/" />
-      <meta property="og:title" content="돼지력 테스트" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="/img/pig.png" />
-      <meta property="og:description" content="나의 돼지력은 얼마일까?" />
+    <!-- sns share -->
+    <meta property="og:url" content="https://piggytest-ver1.netlify.app/" />
+    <meta property="og:title" content="돼지력 테스트" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/img/pig.png" />
+    <meta property="og:description" content="나의 돼지력은 얼마일까?" />
 
-      <!--favicon-->
-      <link rel="shortcut icon" href="/img/pig.png">
-      <link rel="apple-touch-icon-precomposed" href="/img/pig.png" />
+    <!--favicon-->
+    <link rel="shortcut icon" href="/img/pig.png" />
+    <link rel="apple-touch-icon-precomposed" href="/img/pig.png" />
 
-       <!-- 통계보기(chart.js) -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>    
+    <!-- 통계보기(chart.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
-      <title>돼지력 테스트</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="../css/default.css">
-      <link rel="stylesheet" href="../css/result.css">
-      <link rel="stylesheet" href="/css/statistics.css">
+    <title>돼지력 테스트</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/result.css" />
+    <!-- <link rel="stylesheet" href="/css/statistics.css" /> -->
   </head>
   <body>
-    <!-- <section id="shareResult" class="mx-auto my-5 py-5 px-5"> -->
-
-      <!-- 참여자 통계보기 -->
-      <h3>다른 사람들은 이렇대..</h3>
-      <div class="canvasWrapper">
-        <canvas id="myChart"></canvas>
-      </div>
-      <!-- <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
-      <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">나도 참여하기</button>
-
-      <script type="text/javascript">
-        function moveHome(){
-          location.href = "/index.html";
-        } -->
-      </script>
-      <script src="/js/statistics.js"></script>
-    <!-- </section> -->
+    <!-- 참여자 통계보기 -->
+    <h3>다른 사람들은 이러고 삽니다.🐖</h3>
+    <div class="canvasWrapper">
+      <canvas id="myChart" style="width: 70vw"></canvas>
+    </div>
+    <div class="btnWrapper">
+      <button
+        type="button"
+        class="kakao mt-3 py-2 px-3"
+        onclick="js:setShare()"
+      >
+        공유하기
+      </button>
+      <button
+        type="button"
+        class="gohome mt-3 py-2 px-3"
+        onclick="js:moveHome()"
+      >
+        나도 참여하기
+      </button>
+    </div>
+    <script type="text/javascript">
+      function moveHome() {
+        location.href = "/index.html";
+      }
+    </script>
+    <script src="/js/start.js"></script>
   </body>
 </html>

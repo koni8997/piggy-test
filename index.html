@@ -1,128 +1,146 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="PandaCoding" />
+    <meta name="keywords" content="돼지력 테스트" />
+    <meta name="description" content="나의 돼지력은 얼마일까?" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="PandaCoding">
-  <meta name="keywords" content="돼지력 테스트">
-  <meta name="description" content="나의 돼지력은 얼마일까?">
+    <!-- sns share -->
+    <meta property="og:url" content="https://piggy-test.netlify.app/" />
+    <meta property="og:title" content="돼지력 테스트" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/img/pig.png" />
+    <meta property="og:description" content="나의 돼지력은 얼마일까?" />
 
-  <!-- sns share -->
-  <meta property="og:url" content="https://piggy-test.netlify.app/" />
-  <meta property="og:title" content="돼지력 테스트" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/img/pig.png" />
-  <meta property="og:description" content="나의 돼지력은 얼마일까?" />
+    <!--favicon-->
+    <link rel="shortcut icon" href="/img/pig.png" />
 
-  <!--favicon-->
-  <link rel="shortcut icon" href="/img/pig.png">
+    <!-- 애플앱 위함 -->
+    <link rel="apple-touch-icon-precomposed" href="/img/pig.png" />
 
-  <!-- 애플앱 위함 -->
-  <link rel="apple-touch-icon-precomposed" href="/img/pig.png" />
+    <title>Piggy Test</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
 
-  <title>Piggy Test</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  
-  <!-- 구글 폰트 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Stylish&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Stylish&family=Sunflower:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS 파일 -->
-  <link rel="stylesheet" href="./css/default.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/qna.css">
-  <link rel="stylesheet" href="./css/animation.css">
-  <link rel="stylesheet" href="./css/result.css">
+    <!-- CSS 파일 -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/qna.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/result.css" />
 
-  <!-- 카카오 링크 -->
-  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-  <script>
-    Kakao.init('32ffb265175d8e566b30a9755ded762d');
-    Kakao.isInitialized();
-  </script>
-
-  <!-- 통계보기(chart.js) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>    
-
-</head>
-
-<body>
-  <div class="container">
-
- <!-- 메인 화면 -->
-  <section id="main" class="mx-auto my-5 py-5 px-3">
-      <h1>"돼지력 테스트"</h1>
-
-      <!-- 메인 돼지 사진 -->
-      <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-        <img src="/img/pig.png" width=450  alt="" class="img-fluid">
-      </div>
-      
-      <!-- 사이트 설명 -->
-      <p>
-      나의 돼지력을 테스트하는 사이트입니다! <br>
-      시작하기 버튼을 눌러 시작해 주십시오.
-    </p>
-
-    <!-- 시작하기버튼 -->
-    <button button type="button" class="btn mt-3" onclick="js:begin()">
-      <b>시작하기</b>
-    </button>
-  </section>
-
-
-  <!-- 질문지 -->
-  <section id="qna">
-    <!-- 상태바 -->
-      <div class="status mx-auto mt-5">
-        <div class="statusBar">
-        </div>
-      </div>
-      <div class="qBox my-5 py-3 mx-auto">
-        <!-- 질문지 -->
-      </div>
-      <div class="answerBox">
-        <!-- 선택지 -->
-      </div>
-  </section>
-  
-  <!-- 결과 -->
-  <section id="result" class="mx-auto my-5 py-5 px-3">
-      <h1>당신의 결과는?!</h1>
-      <div class="resultname">
-        <!-- 결과 자리 -->
-      </div>
-
-      <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"> <!--margin-y축(위아래)-->
-        <!-- 결과 이미지 -->
-      </div>
-
-      <div class="resultDesc">
-        <!-- 결과 설명 -->
-      </div>
-
-      <!-- 공유&통계보기 버튼 -->
-      <div class="btnWrapper">
-        <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
-        <button type="button" class="statisticsBtn mt-3 py-2 px-3" onclick="js:showStastics()">다른 참여자들 결과 확인</button>
-      </div>
-  </section>
-
-  <!-- 자바스크립트 파일 연동 -->
-    <script src="./js/data.js" charset="utf-8"></script>
-    <script src="./js/start.js" charset="utf-8"></script>
-    <script src="./js/share.js" charset="utf-8"></script>
-    <!-- <script src="/js/statistics.js"></script> -->
+    <!-- 카카오 링크 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
-      function showStastics(){
-        // var chart=document.getElementById('myChart');
-        window.location.href = "/statistics.html";//클릭 시 결과 보기 페이지
-        // chart.style.display='block';
-}
+      Kakao.init("32ffb265175d8e566b30a9755ded762d");
+      Kakao.isInitialized();
     </script>
-  </div>
-</body>
 
+    <!-- 통계보기(chart.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- 메인 화면 -->
+      <section id="main" class="mx-auto my-5 py-5 px-3">
+        <h1>"돼지력 테스트"</h1>
+
+        <!-- 메인 돼지 사진 -->
+        <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="/img/pig.png" width="450" alt="" class="img-fluid" />
+        </div>
+
+        <!-- 사이트 설명 -->
+        <p>
+          나의 돼지력을 테스트하는 사이트입니다! <br />
+          시작하기 버튼을 눌러 시작해 주십시오.
+        </p>
+
+        <!-- 시작하기버튼 -->
+        <button button type="button" class="btn mt-3" onclick="js:begin()">
+          <b>시작하기</b>
+        </button>
+      </section>
+
+      <!-- 질문지 -->
+      <section id="qna">
+        <!-- 상태바 -->
+        <div class="status mx-auto mt-5">
+          <div class="statusBar"></div>
+        </div>
+        <div class="qBox my-5 py-3 mx-auto">
+          <!-- 질문지 -->
+        </div>
+        <div class="answerBox">
+          <!-- 선택지 -->
+        </div>
+      </section>
+
+      <!-- 결과 -->
+      <section id="result" class="mx-auto my-5 py-5 px-3">
+        <h1>당신의 결과는?!</h1>
+        <div class="resultname">
+          <!-- 결과 자리 -->
+        </div>
+
+        <div
+          id="resultImg"
+          class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"
+        >
+          <!--margin-y축(위아래)-->
+          <!-- 결과 이미지 -->
+        </div>
+
+        <div class="resultDesc">
+          <!-- 결과 설명 -->
+        </div>
+
+        <!-- 공유&통계보기 버튼 -->
+        <div class="btnWrapper">
+          <button
+            type="button"
+            class="kakao mt-3 py-2 px-3"
+            onclick="js:setShare()"
+          >
+            공유하기
+          </button>
+          <button
+            type="button"
+            class="statisticsBtn mt-3 py-2 px-3"
+            onclick="js:showStastics()"
+          >
+            다른 참여자들 결과 확인
+          </button>
+        </div>
+      </section>
+
+      <!-- 자바스크립트 파일 연동 -->
+      <script src="./js/data.js" charset="utf-8"></script>
+      <script src="./js/start.js" charset="utf-8"></script>
+      <script src="./js/share.js" charset="utf-8"></script>
+      <!-- <script src="/js/statistics.js"></script> -->
+      <script>
+        function showStastics() {
+          var chart = document.getElementById("myChart");
+          window.location.href = "/statistics.html"; //클릭 시 결과 보기 페이지
+          chart.style.display = "block";
+        }
+      </script>
+    </div>
+  </body>
 </html>

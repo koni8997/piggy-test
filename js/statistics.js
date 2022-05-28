@@ -1,5 +1,3 @@
-
-
 // // 각 유형별 참여자 수 초기화
 // let superPig=0;
 // let piggy=0;
@@ -7,19 +5,6 @@
 
 // let qIdx = 0;
 // var target = qnaList[qIdx].a[idx].score; //문항별 1,2,3
-
-// function calResult(){
-//     if(select>24){
-//       return 0 //슈퍼멧돼지
-//     }else if(select>16){
-//       return 1  //아기돼지
-//     }else{
-//       return 2 //안돼지
-//     }
-//   }
-// let point = calResult(); //결과 등급(3/2/1)
-
-
 
 // conts btnArr=[0,1,2];
 // conts txtArr=[...document.getElementsByClassName('results')];
@@ -80,88 +65,78 @@
 //                     backgroundColor:['#56A3A6'],
 //                     borderWidth:1
 //                 }
-//             ]}
-//         options: {
-//             title:{
-//                 display:true,
-//                 text:["선택자수"]
-//             },
-//             tooltips:{enabled:false},
-//             scales:{
-//                 yAxes:[{
-//                     tricks:{
-//                         display:true,
-//                         beginAtZero:true
-//                     }
-//                 }]
+//             ],
+//             options: {
+//             legend: {
+//                 display: true,
+//                 labels: {
+//                     fontColor: 'red'
+//                 }
+//                 }
 //             }
-//         }
-//     });
+//     }});
 
+// // var context = document
+// //                 .getElementById('myChart')
+// //                 .getContext('2d');
+// //             var myChart = new Chart(context, {
+// //                 type: 'pie', // 차트의 형태
+// //                 data: { // 차트에 들어갈 데이터
+// //                     labels: [
+// //                         //x 축
+// //                         '1','2','3'
+// //                     ],
+// //                     datasets: [
+// //                         { //데이터
+// //                            data: [
+// //                                 21,
+// //                                 9,
+// //                                 25//x축 label에 대응되는 데이터 값
+// //                             ],
+// //                             backgroundColor: [
+// //                                 //색상
+// //                                 '#5d90c7',
+// //                                 '#7cbfb6',
+// //                                 '#f9d877'
+// //                             ],
+// //                             borderColor: [
+// //                                 //경계선 색상
+// //                                 'transparent',
+// //                                 'transparent',
+// //                                 'transparent'
+// //                             ],
 
+// //                         }
+// //                     ]
+// //                 },
+// //                 options: {
+// //                     responsive: true,
+// //                     showDatasetLabels : true,
+// //                     legend: {
+// //                              display: true,
+// //                              position:'bottom',//라벨 위치
+// //                          } ,
+// //                      labels:{
+// //                          render:'percentage',
+// //                          color:'black',
+// //                          fontSize:50
+// //                      } ,
 
-var context = document
-                .getElementById('myChart')
-                .getContext('2d');
-            var myChart = new Chart(context, {
-                type: 'pie', // 차트의 형태
-                data: { // 차트에 들어갈 데이터
-                    labels: [
-                        //x 축
-                        '1','2','3'
-                    ],
-                    datasets: [
-                        { //데이터
-                           data: [
-                                21,
-                                9,
-                                25//x축 label에 대응되는 데이터 값
-                            ],
-                            backgroundColor: [
-                                //색상
-                                '#5d90c7',
-                                '#7cbfb6',
-                                '#f9d877'
-                            ],
-                            borderColor: [
-                                //경계선 색상
-                                'transparent',
-                                'transparent',
-                                'transparent'
-                            ],
-                           
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    showDatasetLabels : true,
-                    legend: {
-                             display: true, 
-                             position:'bottom',//라벨 위치
-                         } ,
-                     labels:{
-                         render:'percentage',
-                         color:'black',
-                         fontSize:50
-                     } ,
-                     
-                   
-                    plugins: {
-                        // title:{
-                        // display:true,
-                        // text:'다른 사람들은 이렇대..',
-                        // fontColor:black
-                        // },
-                        subtitle: {
-                        display: true,
-                        text: 'Custom Chart Subtitle'
-                        },
-                    },
-                    layout: {
-                        padding: {
-                            top:60
-                        }
-                    }
-                }
-            });
+// //                     plugins: {
+// //                         // title:{
+// //                         // display:true,
+// //                         // text:'다른 사람들은 이렇대..',
+// //                         // fontColor:black
+// //                         // },
+// //                         subtitle: {
+// //                         display: true,
+// //                         text: 'Custom Chart Subtitle'
+// //                         },
+// //                     },
+// //                     layout: {
+// //                         padding: {
+// //                             top:60
+// //                         }
+// //                     }
+// //                 }
+// //             });
