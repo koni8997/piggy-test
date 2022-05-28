@@ -173,9 +173,9 @@ window.onload = function () {
           ],
           backgroundColor: [
             //색상
-            "#5d90c7",
-            "#7cbfb6",
-            "#f9d877",
+            "#95b7dd",
+            "#c6ddca",
+            "#fff596",
           ],
           borderColor: [
             //경계선 색상

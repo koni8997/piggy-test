@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="PandaCoding" />
     <meta name="keywords" content="돼지력 테스트" />
     <meta name="description" content="나의 돼지력은 얼마일까?" />
 
@@ -11,12 +10,12 @@
     <meta property="og:url" content="https://piggytest-ver1.netlify.app/" />
     <meta property="og:title" content="돼지력 테스트" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/img/pig.png" />
+    <meta property="og:image" content="./img/pig.png" />
     <meta property="og:description" content="나의 돼지력은 얼마일까?" />
 
     <!--favicon-->
-    <link rel="shortcut icon" href="/img/pig.png" />
-    <link rel="apple-touch-icon-precomposed" href="/img/pig.png" />
+    <link rel="shortcut icon" href="./img/pig.png" />
+    <link rel="apple-touch-icon-precomposed" href="./img/pig.png" />
 
     <!-- 통계보기(chart.js) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
@@ -39,9 +38,9 @@
   </head>
   <body>
     <!-- 참여자 통계보기 -->
-    <h3>다른 사람들은 이러고 삽니다.🐖</h3>
+    <div class="seeStatistics">다른 사람들은 이러고 삽니다.🐖</div>
     <div class="canvasWrapper">
-      <canvas id="myChart" style="width: 70vw"></canvas>
+      <canvas id="myChart" ></canvas>
     </div>
     <div class="btnWrapper">
       <button
@@ -64,6 +63,7 @@
         location.href = "/index.html";
       }
     </script>
-    <script src="/js/start.js"></script>
+    <script defer src="/js/start.js"></script>
+    <script defer src="/js/share.js"></script>
   </body>
 </html>

@@ -82,7 +82,14 @@
   justify-content: center;
 }
 
-h3 {
+canvas{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.seeStatistics {
+  width: 100%;
+
   background-color: whitesmoke;
   text-align: center;
   margin-top: 5vh;

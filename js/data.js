@@ -1,4 +1,4 @@
-//고득점일수록 씹돼지datajs
+//고득점일수록 돼지
 
 const qnaList = [
   {
@@ -78,7 +78,7 @@ const qnaList = [
         score: 3,
       },
       { answer: "b. 커피라도 한 잔 마시지 뭐..저녁 많이 먹어야겠다", score: 2 },
-      { answer: "c. 이런 날도 있는 거지~별로 신경 안 써", score: 1 },
+      { answer: "c. 이런 날도 있는 거지~전혀 신경 안 써", score: 1 },
     ],
   },
   {
@@ -121,7 +121,7 @@ const qnaList = [
           "b. 먹을 게 있는지 대충 찾아보고 없으면 가족한테 사오라고 하면 돼",
         score: 2,
       },
-      { answer: "c. 누군가 먹을 것을 사 올 때까지 굶으면 되지", score: 1 },
+      { answer: "c. 배고픔은 내게 익숙해..그냥 참을래", score: 1 },
     ],
   },
   {

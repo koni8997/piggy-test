@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="author" content="PandaCoding">
       <meta name="keywords" content="돼지력 테스트">
       <meta name="description" content="나의 돼지력은 얼마일까?">
 
@@ -11,12 +10,12 @@
       <meta property="og:url" content="https://piggytest-ver1.netlify.app/" />
       <meta property="og:title" content="돼지력 테스트" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/img/pig.png" />
+      <meta property="og:image" content="../img/pig.png" />
       <meta property="og:description" content="나의 돼지력은 얼마일까?" />
 
       <!--favicon-->
-      <link rel="shortcut icon" href="/img/pig.png">
-      <link rel="apple-touch-icon-precomposed" href="/img/pig.png" />
+      <link rel="shortcut icon" href="../img/pig.png">
+      <link rel="apple-touch-icon-precomposed" href="../img/pig.png" />
 
        <!-- 통계보기(chart.js) -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>    
@@ -41,10 +40,24 @@
         <p>먹는 즐거움을 적당히 즐기는 당신! 절제해야 할 때를 아는 신중한 스타일이랍니다.👍🏻 먹을 것에 진심이기는 하나 배가 고플 때도 이성의 끈을 놓지 않아 예민하게 굴거나 못 먹을 양의 음식을 주문해서 남기는 참사를 막을 수 있어요.🥲<br>  배가 고파 이성을 잃은 멧돼지 친구를 만난다면 친구의 정신줄을 대신해서 잡아주고 먹을 것을 입에 넣어주세요🍔.<br> 그럼 당신은 우정도, 체중도 모두 지킬 수 있는 현명한 아기돼지가 될 것입니다!</p>
       </div>
 
-      <!-- 참여자 통계보기 -->
-      <div class="canvasWrapper">
-        <canvas id="myChart"></canvas>
-      </div>  
+      <!-- 공유&통계보기 버튼 -->
+
+      <div class="btnWrapper">
+        <button
+          type="button"
+          class="kakao mt-3 py-2 px-3"
+          onclick="js:setShare()"
+        >
+          공유하기
+        </button>
+        <button
+          type="button"
+          class="statisticsBtn mt-3 py-2 px-3"
+          onclick="js:showStastics()"
+        >
+          다른 참여자들 결과 확인
+        </button>
+      </div> 
       <script type="text/javascript">
         function moveHome(){
           location.href = "/index.html";
